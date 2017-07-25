@@ -1,0 +1,134 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+    text-decoration-line: none;
+}
+.navbar a{
+	color: #fff;
+	text-decoration-line: none;
+}
+textarea{
+	resize: none;
+}
+button{
+	outline:none;
+	width:96px;
+	height: 40px;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	line-height: 40px;
+    border-radius: 10px;
+	border-width: 1px;
+	margin-top: 10px;		
+	background-color: rgb(75,160,232);		
+}
+
+.link-style{
+	text-decoration: underline;
+}	
+
+
+/*paging component*/
+
+.news-pages {
+    text-align: center;
+    -webkit-user-select: none;
+}
+
+.news-pages {
+    font-family: arial;
+    color: #48576a;
+}
+
+    .news-pages ul {
+        display: inline-block;
+        margin: 20px 20px;
+        padding: 0;
+    }
+
+        .news-pages ul li {
+            display: inline-block;
+            margin: 0;
+            padding: 0 4px;
+            border: 1px solid #d1dbe5;
+            border-right: 0;
+            background: #fff;
+            font-size: 13px;
+            min-width: 28px;
+            height: 28px;
+            line-height: 28px;
+            cursor: pointer;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+            .news-pages ul li:last-child {
+                border-right: 1px solid #d1dbe5;
+            }
+
+            .news-pages ul li:hover {
+                color: #20a0ff;
+            }
+
+            .news-pages ul li.active {
+                border-color: #20a0ff;
+                background-color: #20a0ff;
+                color: #fff;
+                cursor: default;
+            }
+
+                .news-pages ul li.active:hover {
+                    color: #fff;
+                }
+
+            .news-pages ul li.disabled {
+                cursor: not-allowed;
+                color: #e4e4e4;
+            }
+
+            .news-pages ul li.dot {
+                cursor: default;
+            }
