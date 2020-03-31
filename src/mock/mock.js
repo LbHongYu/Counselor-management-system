@@ -101,10 +101,6 @@ Mock.mock("http://localhost:8080/graduation/getTeaOneNews",{
 	"text":"@cparagraph(36)"
 })
 
-
-
-
-
 var aCount=Mock.mock({
 	"name|4":"ab"
 })

@@ -26,11 +26,11 @@
       <div class="register"><router-link to="/user-register">登录</router-link></div>
       <span>|</span>
       <div class="sign"><router-link to="/sign-in">注册</router-link></div>
-    </div>    
+    </div>
     <div class="welcom" v-if="userId">
       <span>欢迎您</span> |
       <a href="javascript:void(0)" @click="signOut">退出</a>
-    </div>    
+    </div>
   </div>
 </template>
 
@@ -45,10 +45,10 @@
         teaService:false,
         id:null,
         logined:false
-        
+
       }
     },
-    computed:mapState({ 
+    computed:mapState({
         userId: function(state){
           return state.user.userId;
         }
@@ -70,23 +70,22 @@
           this.$router.replace({ path: '/' })
       },
       hideTeaUl(){
-        this.teaService=false;        
+        this.teaService=false;
       },
       hideStuUl(){
-        this.stuService=false;        
+        this.stuService=false;
       }
     },
     watch: {
-      '$route': 'fetchData',
+      '$route.query': 'fetchData',
       userId(newV,oldV){
         console.log(newV);
         this.id=newV;
       }
     },
     mounted(){
-
-      //console.log(this.id);
-    }  
+      console.log(this.$options, this);
+    }
   }
 </script>
 
@@ -117,7 +116,7 @@
     top:42px;
     left: 0;
     z-index: 999;
-    background-color: rgb(75,160,232);    
+    background-color: rgb(75,160,232);
   }
   .relative-li span{
     cursor:pointer;
@@ -132,7 +131,7 @@
   }
   .welcom a{
     margin-left: 10px;
-  }  
+  }
   .welcom a:hover{
     text-decoration: underline;
   }

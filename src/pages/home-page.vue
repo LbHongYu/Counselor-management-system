@@ -3,13 +3,12 @@
     <div class="header-wrap">
       <div class="header-bg">
         <div class="system-logo">
-          
           <img src="../assets/logo.png">
         </div>
-        <div class="web-name">辅导员事务管理系统</div>  
-   
+        <div class="web-name">辅导员事务管理系统</div>
       </div>
     </div>
+
     <div class="nav">
       <navBar></navBar>
     </div>

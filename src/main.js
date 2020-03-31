@@ -1,8 +1,7 @@
 
-import Vue from 'vue'
+import Vue from '@/lib/vue/dist.js'
 import store from './store/'
 import VueResource from "vue-resource"
-
 
 import App from './App'
 import router from './router'
@@ -10,6 +9,8 @@ import mock from './mock/mock'
 import './common/css/reset.css'
 
 Vue.config.productionTip = false
+Vue.config.performance = true;
+
 Vue.use(VueResource);
 
 Vue.http.interceptors.push((request, next) => {
